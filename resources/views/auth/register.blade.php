@@ -19,7 +19,7 @@
             width: auto;
             left: 164px;
             font-family: Inter;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: 700;
             color: #0F172A;
             align-items: center;
@@ -28,12 +28,12 @@
         }
         .user-input{
             width: 404px;
-            height: 56px;
-            padding: 20px, 8px, 20px, 8px;
+            height: 70px;
+            padding: 5px, 8px, 5px, 8px;
             border-radius: 12px;
             border: 1px;
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-top: 4px;
+            margin-bottom: 4px;
         }  
         .agree-checkbox{
             width: 404px;
@@ -46,9 +46,9 @@
             display: flex;
         }
         #my-checkbox{
-
-            margin-bottom: 5px;
-
+            margin-top:none;
+            margin-bottom: 32px;
+            margin-right: 10px;
         }
         .sign-up-button{
             width: 404px;
@@ -68,10 +68,10 @@
             height: 22px
             styleName: Heading/H6;
             font-family: Inter;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 22px;
-        }  
+        } 
     </style>
 </head>
 @extends('layouts.app')
@@ -147,7 +147,7 @@
                             </div>
                             <div class="agree-checkbox">
                             <input type="checkbox" id="my-checkbox">
-                            <label for="my-checkbox">By creating an account means you agree to the Terms & Conditions and our Privacy Policy</label>
+                            <label for="my-checkbox">By creating an account means you agree to the <strong> Terms & Conditions</strong> and our <strong>Privacy Policy</strong></label>
                             </div>
                         <!-- </div> -->
                         <!-- <div class="row mb-0"> -->
