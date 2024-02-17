@@ -9,11 +9,10 @@
             display:flex;
         }
         .sign-up-box{
-            width: 732px;
+            width: 450px;
             height: 900px;
             background: #F8FAFC;
             justify-content: center;
-            margin-left:300px;
         }
         .sign-up-header{
             width: auto;
@@ -24,7 +23,7 @@
             color: #0F172A;
             align-items: center;
             justify-content: center; 
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .user-input{
             width: 404px;
@@ -34,15 +33,21 @@
             border: 1px;
             margin-top: 4px;
             margin-bottom: 4px;
-        }  
+        } 
+        #name,#phone,#email,#password,#password-confirm{
+            height: 45px;
+        } 
+        #name{
+            background-image: url("C:\wamp64\www\Ticket_CMR\resources\svg icons\user.svg");
+        }
         .agree-checkbox{
             width: 404px;
             height: 56px;
             padding: 8px, 16px, 8px, 16px;
             border-radius: 12px;
             border: 1px;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             display: flex;
         }
         #my-checkbox{
@@ -89,7 +94,7 @@
                         @csrf
                         <!-- <div class="row mb-3"> -->
                             <!-- <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Your Name') }}</label> -->
-                            <div class="user-input">
+                            <div class="user-input"> 
                                 <input id="name" placeholder="Your Name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
