@@ -9,6 +9,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/register_style.css',
                 'resources/css/login_style.css',
+                'resources/css/home_style.css',
             ],
             refresh: true,
         }),
